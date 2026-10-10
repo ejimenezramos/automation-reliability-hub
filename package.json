@@ -1,0 +1,22 @@
+{
+  "name": "automation-reliability-hub",
+  "version": "0.1.0",
+  "description": "Business automation reliability and ownership hub",
+  "private": true,
+  "scripts": {},
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.10.1",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.10.1",
+  "type": "module"
+}
