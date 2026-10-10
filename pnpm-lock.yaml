@@ -176,37 +176,37 @@ importers:
         version: 19.3.0(react@19.3.0)
     devDependencies:
       '@eslint/js':
-        specifier: ^10.0.1
+        specifier: 10.0.1
         version: 10.0.1(eslint@10.12.0)
       '@types/node':
-        specifier: ^24.13.3
+        specifier: 24.19.1
         version: 24.19.1
       '@types/react':
-        specifier: ^19.2.18
+        specifier: 19.3.0
         version: 19.3.0
       '@types/react-dom':
-        specifier: ^19.2.7
+        specifier: 19.3.0
         version: 19.3.0(@types/react@19.3.0)
       '@vitejs/plugin-react':
         specifier: 6.1.1
         version: 6.1.1(vite@8.1.6(@types/node@24.19.1))
       eslint:
-        specifier: ^10.10.0
+        specifier: 10.12.0
         version: 10.12.0
       eslint-plugin-react-hooks:
-        specifier: ^7.1.1
+        specifier: 7.1.1
         version: 7.1.1(eslint@10.12.0)
       eslint-plugin-react-refresh:
-        specifier: ^0.5.6
+        specifier: 0.5.7
         version: 0.5.7(eslint@10.12.0)
       globals:
-        specifier: ^17.12.0
+        specifier: 17.13.0
         version: 17.13.0
       typescript:
         specifier: 6.0.2
         version: 6.0.2
       typescript-eslint:
-        specifier: ^8.69.0
+        specifier: 8.71.1
         version: 8.71.1(eslint@10.12.0)(typescript@6.0.2)
       vite:
         specifier: 8.1.6
