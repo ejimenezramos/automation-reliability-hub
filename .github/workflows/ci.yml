@@ -31,7 +31,7 @@ jobs:
           cache: false
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-      # Backend checks will return with the .NET scaffold before this migration is merged.
+      # Add backend build and tests when the .NET API is implemented.
       - name: Build applications
         run: pnpm build
 

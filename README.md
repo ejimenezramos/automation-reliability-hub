@@ -6,9 +6,9 @@ A personal learning project to identify business automations that need attention
 
 ### Current status
 
-The React frontend runs locally. The backend is being migrated to .NET 10 / ASP.NET Core. The previous NestJS starter has been removed; the new API and its tests are not implemented yet. Business features, PostgreSQL integration and deployment are pending.
+The project uses React and TypeScript for the frontend and .NET 10 / ASP.NET Core for the planned backend. The frontend runs locally. API implementation, backend tests, business features, PostgreSQL integration and deployment are pending.
 
-During this migration, CI checks the frontend build and lint only. Backend checks must be restored before merging the completed migration. The main branch is protected.
+CI currently checks the frontend build and lint. Backend build and test checks will be added with the API. The main branch is protected.
 
 ### Development approach
 
@@ -46,9 +46,9 @@ Proyecto personal de aprendizaje para identificar automatizaciones de negocio qu
 
 ### Estado actual
 
-El frontend React funciona localmente. El backend está migrándose a .NET 10 / ASP.NET Core. Se ha retirado el ejemplo inicial de NestJS; la nueva API y sus tests todavía no están implementados. Las funcionalidades de negocio, la integración con PostgreSQL y el despliegue están pendientes.
+El proyecto utiliza React y TypeScript para el frontend y .NET 10 / ASP.NET Core como backend previsto. El frontend funciona localmente. La implementación de la API, los tests del backend, las funcionalidades de negocio, la integración con PostgreSQL y el despliegue están pendientes.
 
-Durante esta migración, CI comprueba únicamente el build y lint del frontend. Las comprobaciones del backend deben restablecerse antes de integrar la migración completa. La rama main está protegida.
+CI comprueba actualmente el build y lint del frontend. Las comprobaciones de build y tests del backend se añadirán con la API. La rama main está protegida.
 
 ### Método de desarrollo
 
