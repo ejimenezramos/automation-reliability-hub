@@ -2,116 +2,78 @@
 
 ## English
 
-A personal learning project aimed at helping engineers identify which business automations need attention, understand why, and find the context needed to investigate.
+A personal learning project to identify business automations that need attention, explain their risk and bring together ownership and operational context.
 
 ### Current status
 
-The initial React frontend and NestJS API run locally. GitHub Actions checks builds, lint and the existing API tests. The main branch is protected.
+The project uses React and TypeScript for the frontend and .NET 10 / ASP.NET Core for the planned backend. The frontend runs locally. API implementation, backend tests, business features, PostgreSQL integration and deployment are pending.
 
-Business features, risk evaluation, database integration and deployment are not implemented yet.
+CI currently checks the frontend build and lint. Backend build and test checks will be added with the API. The main branch is protected.
 
 ### Development approach
 
-The initial application structures were generated with Vite and Nest CLI. Elena Jiménez manually configures the project and is learning to implement meaningful product code, with AI assistance as an architect, tutor and reviewer.
+The React structure was generated with Vite. Elena Jiménez writes meaningful product code manually, with AI assistance as architect, tutor and reviewer. The planned backend uses C# and .NET 10.
 
-### Requirements
+### Requirements and local setup
 
 - Node.js 24.21.0
 - pnpm 12.10.1
-
-### Local setup
+- .NET 10 SDK for the upcoming API
 
 From the repository root:
 
 ```bash
 pnpm install --frozen-lockfile
-```
-
-Start each application in a separate terminal:
-
-```bash
 pnpm dev:web
 ```
 
-```bash
-pnpm dev:api
-```
+Web: http://localhost:5173. The frontend does not consume an API yet.
 
-Default local addresses:
-
-- Web: http://localhost:5173
-- API: http://localhost:3000
-
-The applications run independently; the frontend does not consume the API yet.
-
-### Checks
-
-Run from the repository root:
+### Current checks
 
 ```bash
 pnpm build
 pnpm lint
-pnpm test:api
-pnpm test:api:e2e
 ```
 
-The current tests cover the starter API controller and its HTTP response, not business rules.
+These commands currently check the frontend only. API start and test commands will be added with the .NET implementation.
 
 ---
 
 ## Español
 
-Proyecto personal de aprendizaje orientado a ayudar a los ingenieros a identificar qué automatizaciones de negocio requieren atención, entender por qué y encontrar el contexto necesario para investigar.
+Proyecto personal de aprendizaje para identificar automatizaciones de negocio que requieren atención, explicar su riesgo y reunir su ownership y contexto operativo.
 
 ### Estado actual
 
-El frontend inicial de React y la API de NestJS funcionan localmente. GitHub Actions comprueba los builds, lint y los tests existentes de la API. La rama main está protegida.
+El proyecto utiliza React y TypeScript para el frontend y .NET 10 / ASP.NET Core como backend previsto. El frontend funciona localmente. La implementación de la API, los tests del backend, las funcionalidades de negocio, la integración con PostgreSQL y el despliegue están pendientes.
 
-Las funcionalidades de negocio, la evaluación del riesgo, la conexión a base de datos y el despliegue todavía no están implementados.
+CI comprueba actualmente el build y lint del frontend. Las comprobaciones de build y tests del backend se añadirán con la API. La rama main está protegida.
 
 ### Método de desarrollo
 
-Las estructuras iniciales de las aplicaciones fueron generadas con Vite y Nest CLI. Elena Jiménez configura manualmente el proyecto y está aprendiendo a implementar el código significativo del producto, con asistencia de IA como arquitecto, tutor y revisor.
+La estructura React se generó con Vite. Elena Jiménez escribe manualmente el código significativo del producto, con asistencia de IA como arquitecto, tutor y revisor. El backend previsto utiliza C# y .NET 10.
 
-### Requisitos
+### Requisitos y preparación local
 
 - Node.js 24.21.0
 - pnpm 12.10.1
-
-### Preparación local
+- SDK .NET 10 para la futura API
 
 Desde la raíz del repositorio:
 
 ```bash
 pnpm install --frozen-lockfile
-```
-
-Arranca cada aplicación en una terminal distinta:
-
-```bash
 pnpm dev:web
 ```
 
-```bash
-pnpm dev:api
-```
+Web: http://localhost:5173. El frontend todavía no consume una API.
 
-Direcciones locales predeterminadas:
-
-- Web: http://localhost:5173
-- API: http://localhost:3000
-
-Las aplicaciones funcionan por separado; el frontend todavía no consume la API.
-
-### Comprobaciones
-
-Ejecuta desde la raíz:
+### Comprobaciones actuales
 
 ```bash
 pnpm build
 pnpm lint
-pnpm test:api
-pnpm test:api:e2e
 ```
 
-Los tests actuales cubren el controlador inicial de la API y su respuesta HTTP, no las reglas de negocio.
+Actualmente estos comandos comprueban sólo el frontend. Los comandos de arranque y tests de la API se añadirán con la implementación .NET.
