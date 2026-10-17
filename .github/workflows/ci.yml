@@ -32,8 +32,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       # Add backend build and tests when the .NET API is implemented.
-      - name: Build applications
+      - name: Build frontend
         run: pnpm build
 
-      - name: Lint applications
+      - name: Lint frontend
         run: pnpm lint
