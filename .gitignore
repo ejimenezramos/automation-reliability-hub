@@ -9,3 +9,9 @@ coverage/
 playwright-report/
 test-results/
 *.tsbuildinfo
+
+# .NET build and test output
+**/bin/
+**/obj/
+TestResults/
+.vs/
