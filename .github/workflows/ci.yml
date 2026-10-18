@@ -45,3 +45,8 @@ jobs:
 
       - name: Build API
         run: dotnet build apps/api/Hub.Api.csproj --configuration Release --no-restore
+      - name: Restore API test dependencies
+        run: dotnet restore tests/Hub.Api.IntegrationTests/Hub.Api.IntegrationTests.csproj
+
+      - name: Run API integration tests
+        run: dotnet test tests/Hub.Api.IntegrationTests/Hub.Api.IntegrationTests.csproj --configuration Release --no-restore
