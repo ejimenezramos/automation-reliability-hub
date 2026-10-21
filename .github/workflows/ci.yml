@@ -50,3 +50,5 @@ jobs:
 
       - name: Run API integration tests
         run: dotnet test tests/Hub.Api.IntegrationTests/Hub.Api.IntegrationTests.csproj --configuration Release --no-restore
+      - name: Build API container image
+        run: docker build -f apps/api/Dockerfile -t hub-api:ci .
