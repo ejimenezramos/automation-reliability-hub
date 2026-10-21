@@ -16,7 +16,3 @@ EXPOSE 8080
 
 USER $APP_UID
 ENTRYPOINT ["dotnet", "Hub.Api.dll"]
-git add .dockerignore apps/api/Dockerfile
-git diff --cached --check
-git commit -m "Containerize .NET API"
-git push -u origin docker-api
